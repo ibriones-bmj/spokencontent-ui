@@ -1,0 +1,273 @@
+main.bmj-content{ padding-top:30px; }
+main.bmj-content h1{font-size:3.2rem;}
+main.bmj-content h2{font-size:2.6rem;}
+main.bmj-content p{ margin-bottom:1em;}
+main.bmj-content dl dd, main dl dt{
+	line-height:100%;
+	padding-bottom:15px;
+	margin:0;
+}
+
+main.bmj-content .wrap-url{
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;      /* IE 5+ */
+}
+@media (max-width:854px) {
+	main.bmj-content{ padding-top:25px; }
+	main.bmj-content h1{font-size:2.6rem;}
+	main.bmj-content h2{font-size:2.2rem;}
+}
+.platform-advanced-page .intro-title {
+	margin-top:0px;
+}
+main.bmj-content .btn.btn-primary {
+	font-size:1.7rem;
+	padding:10px 40px 10px 40px;
+	background-color:#2a6ebb;
+}
+main.bmj-content a.btn.btn-primary:hover {
+ color:#fff;
+ background-color:#245F9F;
+}
+
+/* UMBRELLA HOMEPAGE */
+/* Press release RSS feed */
+.portal-home .press-releases-list{
+	list-style:none;
+	padding-left:0;
+	margin-top:-20px;
+}
+.portal-home .press-releases-list li{
+	line-height:140%;
+	margin-bottom:2rem;
+}
+
+
+/* GENERIC FLEXBOX STYLING */
+main.bmj-content .flex-container{
+	display: -webkit-flex;
+	display: -ms-flexbox; /* IE10*/
+	display: flex;
+}
+main.bmj-content .flex-container .box:last-child{
+	margin-right:0;
+}
+/* Equal ratio column widths */
+main.bmj-content .box-1-1{
+	margin-right:2em;
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;
+}
+/* 2/3 ratio column widths */
+main.bmj-content .box-first-2-3{
+		-webkit-flex:2;
+	-ms-flex:2;
+	flex:2;
+}
+main.bmj-content .box-second-2-3{
+		-webkit-flex:3;
+	-ms-flex:3;
+	flex:3;
+}
+@media (max-width:768px) {
+	main.bmj-content .flex-container{
+		display:block;
+	}
+	main .flex-container .box{
+		margin-right:0;
+	}
+}
+
+/* LIBRARIAN ADVANCED PAGES */
+
+
+/* Generic 2 column layout - (used on Institutional Open Acess page) */
+main.bmj-content.librarians .columns-two{
+	width:100%;
+	display:block;
+}
+main.bmj-content.librarians .columns-two .column{
+	display:inline-block;
+	width:100%;
+	float:left;
+	margin-top:-10px;
+	}
+main.bmj-content.librarians .columns-two +* {
+	clear:both;
+}
+main.bmj-content.librarians .columns-two .column ul{
+	padding-left:2rem;
+	}
+@media (min-width:600px) {
+	main.bmj-content.librarians .columns-two .column{
+		width:47%;
+		margin-right:3%;
+	}
+	main.bmj-content.librarians .columns-two .column:last-child{
+		margin-right:0%;
+	}
+}
+
+/* Librarians page sub nav - Fixed to left edge of browser */
+main.bmj-content.librarians .librarian-sub-nav {
+	margin-left:-146px;
+	margin-top:7px;
+	position:fixed;
+	display:inline;
+	list-style:none;
+}
+main.bmj-content.librarians .librarian-sub-nav li {
+	margin-bottom: 10px;
+	background-color:#fff;
+}
+main.bmj-content.librarians .librarian-sub-nav li a.btn{
+	display:block;
+	width:60px; 
+  height:60px;
+	text-align: center;
+	padding:6px 0 0 0;
+}
+main.bmj-content.librarians .librarian-sub-nav li a.btn .sub-nav-label{
+	padding:0; 
+	margin:0;
+	display:block;
+	}
+main.bmj-content.librarians .librarian-sub-nav li.promote a.btn .sub-nav-label{
+	margin-top:-6px; 
+	}
+main.bmj-content.librarians .librarian-sub-nav li.openaccess a.btn .sub-nav-label{
+	margin-top:-4px;
+	}
+main.bmj-content.librarians .librarian-sub-nav li a:hover, 
+main.bmj-content.librarians .librarian-sub-nav li.current a{
+	color:#fff;
+	text-decoration: none;
+}
+/* for SVG icons*/
+main.bmj-content.librarians .librarian-sub-nav li a:hover .icon, 
+main.bmj-content.librarians .librarian-sub-nav li.current a .icon{
+	fill:#fff;
+}
+main.bmj-content.librarians .librarian-sub-nav li a.btn svg {
+	height:30px;
+	}
+
+main.bmj-content.librarians .librarian-sub-nav li a.btn{
+  border:1px solid #008882;
+  color:#008882;
+}
+main.bmj-content.librarians .librarian-sub-nav li a.btn:hover, 
+main.bmj-content.librarians .librarian-sub-nav li.current a.btn{ 
+	background-color:#008882;
+	color:#fff;
+}
+main.bmj-content.librarians .librarian-sub-nav li a.btn svg .icon{
+	fill:#008882;
+}
+main.bmj-content.librarians .librarian-sub-nav li.current a.btn svg .icon, 
+main.bmj-content.librarians .librarian-sub-nav li a:hover svg .icon{
+	fill:#fff;
+}
+main.bmj-content.librarians .librarian-sub-nav li.toolkit a.btn svg{
+	margin-bottom:-4px;
+	width:22px;
+}
+main.bmj-content.librarians .librarian-sub-nav li.training a.btn svg {
+	height:24px;
+}
+
+main.bmj-content.librarians{
+	margin-left:90px;
+	margin-right:40px;
+}
+
+main.lib-toolkit .flex-container{
+  margin-top:20px;
+}
+main.lib-toolkit .box-first-2-3{
+	padding-right:30px;
+}
+main.lib-toolkit .box-second-2-3{
+	padding-left:30px;
+	border-left:1px solid #ccc;
+}
+@media (max-width:768px) {
+main.lib-toolkit .box-second-2-3{
+	padding-left:0px;
+	border-left:0px solid #ccc;
+}	
+main.lib-toolkit .box-first-2-3{
+	padding-right:0px;
+}
+	}
+
+/* LIBRARIAN HOMEPAGE  */
+.librarian-sections.flex-container {
+  padding: 0;
+  margin: 0;         
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;          
+  flex-wrap:wrap;
+}
+.librarian-sections.flex-container .flex-item{
+	background-color:#FFFFFF;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-right:2%;
+  padding-left:2%;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  width:100%;
+}
+@media screen and (min-width: 520px) and (max-width: 767px) {
+	.librarian-sections.flex-container .flex-item{
+		width:50%;
+	}
+}
+@media screen and (min-width: 768px) {
+	.librarian-sections.flex-container .flex-item{
+		width:25%;
+	}
+}
+.librarian-sections.flex-container .flex-item .flex-item-content{
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	margin-bottom:2.4rem;
+}
+.librarian-sections.flex-container .flex-item .flex-item-content dl{
+	flex:1 0 auto;
+}
+.librarian-sections.flex-container .flex-item .flex-item-content dl .title{
+	line-height:100%;
+	margin-bottom:1.2rem;
+	margin-top:1.2rem;
+}
+.librarian-sections.flex-container .flex-item .flex-item-content dl .description{
+	line-height:140%;
+}
+
+
+
+
+/* TEMPORARY SUBSCRIBE PAGE - these styles can be deleted after all H20 sites have been cut over */
+#subscription-list dt{
+	margin-top:1.7rem;
+}
