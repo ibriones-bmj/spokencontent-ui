@@ -3,7 +3,7 @@
 function change(sourceUrl) {
 	alert(sourceUrl)
     var audio = $("#player");      
-    $("#ogg_src").attr("src", sourceUrl);
+    $("#audioSrc").attr("src", sourceUrl);
     /****************/
     audio[0].pause();
     audio[0].load();//suspends and restores all audio element
