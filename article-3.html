@@ -103,6 +103,7 @@ Chapter 7 epidemiology of animal poisonings in Europe
 <link type="text/css" rel="stylesheet" href="./article-1_files/highwire.style.highwire.css" media="all">
 <link type="text/css" rel="stylesheet" href="./article-1_files/css__2bkDg8EksSysKArDf1FZxtx1FQr0jrFo1e-NLYWTOxg__sJJ4_xc0RcaIlncb64BA8rytJNjX8pDPoAGQDRzzWp4__ZGYzj5l5p84Q-tYjxmePEK2yiE4MQUYtqDcB1soYST8.css" media="all">
 <link type="text/css" rel="stylesheet" href="./css/language-picker.css" media="all">
+<script type="text/javascript" src="./js/language-picker.js"></script>
   <script src="./article-1_files/REPLACE" async=""></script><script async="" src="./article-1_files/fbevents.js.download"></script><script async="" src="./article-1_files/get-loader.js.download"></script><script type="text/javascript" async="" src="./article-1_files/4896.js.download"></script><script type="text/javascript" async="" src="./article-1_files/analytics.js.download"></script><script id="oas_dx_oas.services.bmj.com" async="" type="text/javascript" src="./article-1_files/@Top,Middle1,Bottom"></script><script type="text/javascript" async="" src="./article-1_files/f.js.download"></script><script src="./article-1_files/gtm.js.download" type="text/javascript" async=""></script><script type="text/javascript" async="" src="./article-1_files/1.js.download"></script><script type="text/javascript">
 <!--//--><![CDATA[//><!--
 /*!
@@ -955,8 +956,6 @@ fby.push(['showTab',
   </div>
 <div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-field-highwire-article-cat article-category col-narrow-10">
   
-      
-  
   <div class="pane-content">
     
   <div class="pane-content">
@@ -964,18 +963,17 @@ fby.push(['showTab',
       <div class="language-container">
           
         <ul class="languagepicker roundborders large">
-          <a href="#nl"><li><img src="http://i65.tinypic.com/2d0kyno.png"/>Nederlands</li></a>
-            <a href="#en"><li><img src="http://i64.tinypic.com/fd60km.png"/>English</li></a>
-          <a href="#de"><li><img src="http://i63.tinypic.com/10zmzyb.png"/>German</li></a>
-          <a href="#fr"><li><img src="http://i65.tinypic.com/300b30k.png"/>Français</li></a>
-          <a href="#es"><li><img src="http://i68.tinypic.com/avo5ky.png"/>Español</li></a>
-          <a href="#it"><li><img src="http://i65.tinypic.com/23jl6bn.png"/>Italiano</li></a>
+          <a href="#en" id="en-gb" class="langButton" onclick="return change('http://localhost:8080/retrieveSoundFile?title=man-flu&lang=en-gb');"><li><img src="http://i64.tinypic.com/fd60km.png"/>English</li></a>
+			<a href="#es" id="es-es" class="langButton" onclick="return change('http://localhost:8080/retrieveSoundFile?title=man-flu&lang=es-es');"><li><img src="http://i68.tinypic.com/avo5ky.png"/>Español</li></a>
+			<a href="#it" id="pt-br" class="langButton" onclick="return change('http://localhost:8080/retrieveSoundFile?title=man-flu&lang=pt-br');"><li><img src="http://i65.tinypic.com/23jl6bn.png"/>Portuguese</li></a>
+			<a href="#it" id="ru-ru" class="langButton" onclick="return change('http://localhost:8080/retrieveSoundFile?title=man-flu&lang=ru-ru');"><li><img src="http://i65.tinypic.com/23jl6bn.png"/>Russian</li></a>
         </ul>
   
-        <audio controls>
-            <source src="http://localhost:8080/retrieveSoundFile?title=test-in-pt-br-2&lang=pt-br" type="audio/ogg">  
-           Your browser does not support the audio element.
+        <audio controls id="player">
+            <source src="http://localhost:8080/retrieveSoundFile?title=man-flu&lang=en-gb" type="audio/ogg">  
+			Your browser does not support the audio element.
         </audio>
+		
       </div>
     </div>
 
